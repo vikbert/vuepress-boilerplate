@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Pixss</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="stylesheet" href="">
+    <meta name="description" content="A pragmatical css framework for Minimalist">
+    
+    <link rel="preload" href="/vuepress-boilerplate/assets/css/0.styles.321f843f.css" as="style"><link rel="preload" href="/vuepress-boilerplate/assets/js/app.5e1ebc95.js" as="script"><link rel="preload" href="/vuepress-boilerplate/assets/js/2.a59b9c3e.js" as="script"><link rel="preload" href="/vuepress-boilerplate/assets/js/7.0592dfec.js" as="script"><link rel="prefetch" href="/vuepress-boilerplate/assets/js/10.74e289b8.js"><link rel="prefetch" href="/vuepress-boilerplate/assets/js/3.e48d6748.js"><link rel="prefetch" href="/vuepress-boilerplate/assets/js/4.7c7cbcb6.js"><link rel="prefetch" href="/vuepress-boilerplate/assets/js/5.766016c4.js"><link rel="prefetch" href="/vuepress-boilerplate/assets/js/6.ffe6f60a.js"><link rel="prefetch" href="/vuepress-boilerplate/assets/js/8.f00638eb.js"><link rel="prefetch" href="/vuepress-boilerplate/assets/js/9.45093784.js">
+    <link rel="stylesheet" href="/vuepress-boilerplate/assets/css/0.styles.321f843f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vuepress-boilerplate/" aria-current="page" class="home-link router-link-exact-active router-link-active"><!----> <span class="site-name">Pixss</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/vuepress-boilerplate/other/about.html" class="nav-link">
+  About
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/vuepress-boilerplate/other/about.html" class="nav-link">
+  About
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/vuepress-boilerplate/" aria-current="page" class="active sidebar-link">HOME</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vuepress-boilerplate/#install" class="sidebar-link">Install</a></li><li class="sidebar-sub-header"><a href="/vuepress-boilerplate/#deployment" class="sidebar-link">Deployment</a></li><li class="sidebar-sub-header"><a href="/vuepress-boilerplate/#license" class="sidebar-link">License</a></li></ul></li><li><a href="/vuepress-boilerplate/layout.html" class="sidebar-link">Layout</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><div align="center"><img src="https://vuepress.vuejs.org/hero.png" alt="logo" width="180"> <h1 style="font-weight:bolder;color:black;margin-top:0px;">Vuepress starter</h1> <h3 style="color:darkgrey;margin:40px 0;"> 
+    A quick starter for vuepress sites
+  </h3> <p>
+    This boilerplate provides the template for a quick start with vuepress. It includes the themming customization and a simple script for the deployment on GitHub Pages.
+  </p> <p><a href="#"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"></a> <a href="#"><img src="https://img.shields.io/badge/License-MIT-brightgreen.svg?style=flat-square" alt="MIT License"></a></p></div> <hr> <h2 id="install"><a href="#install" class="header-anchor">#</a> Install</h2> <div class="language-bash extra-class"><pre class="language-bash"><code> <span class="token function">git</span> clone https://github.com/vikbert/vuepress-boilerplate.git my-vuepress
+</code></pre></div><blockquote><p>the project file structure</p></blockquote> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token builtin class-name">.</span>
+├── .gitignore
+├── .vuepress
+│   ├── config.js
+│   └── styles
+│       └── palette.styl
+├── README.md
+├── layout.md
+└── other
+    ├── about.md
+    └── latest.md
+</code></pre></div><ul><li><code>docs</code>: The root of folder <code>docs</code> is the location of <code>markdown</code></li> <li><code>other</code>: the location of the special page content, which you will show as navigtion links.</li> <li><code>.vuepress</code> is the location of vuepress configuration. It is also the default output location for <code>vuepress build</code>. After each run &quot;vuepress build&quot;, a fold named <code>dist</code> will be generated within <code>./vuepress/dist</code></li> <li><code>dist</code> folder is the output location of command <code>vuepress</code>, where all generated htmls files go. It can be configured by tag <code>dest</code> in <code>config.js</code></li></ul> <blockquote><p>generated html static files</p></blockquote> <div class="language-bash extra-class"><pre class="language-bash"><code>.vuepress
+├── config.js
+├── dist
+│   ├── <span class="token number">404</span>.html
+│   ├── assets
+│   │   ├── css
+│   │   │   └── <span class="token number">0</span>.styles.e9e8401c.css
+│   │   ├── img
+│   │   │   └── search.83621669.svg
+│   │   └── js
+│   │       ├── <span class="token number">2</span>.a59b9c3e.js
+│   │       ├── <span class="token punctuation">..</span>.
+│   │       └── app.5bd48d18.js
+│   ├── index.html
+│   ├── layout.html
+│   └── other
+│       ├── about.html
+│       └── latest.html
+</code></pre></div><blockquote><p>html file will be generated according to the file structure of <code>markdown</code> files in the root of <code>docs</code></p></blockquote> <h2 id="deployment"><a href="#deployment" class="header-anchor">#</a> Deployment</h2> <p>As example, we deploy this static web site under <code>github.io/vikbert/vuepress-boilerplate</code>.</p> <p>Run the deploy script to push the static pages to github <code>gh-pages</code></p> <div class="language-bash extra-class"><pre class="language-bash"><code> <span class="token function">bash</span> deploy.sh 
+</code></pre></div><div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment">## deploy.sh</span>
+<span class="token comment">## ------------------</span>
+
+<span class="token comment">#!/usr/bin/env sh</span>
+<span class="token builtin class-name">set</span> -e
+
+<span class="token function">npm</span> run docs:build
+<span class="token function">mkdir</span> -p gh-pages/
+
+<span class="token function">cp</span> -rf docs/.vuepress/dist/* gh-pages
+<span class="token builtin class-name">cd</span> gh-pages
+
+<span class="token function">git</span> init
+<span class="token function">git</span> <span class="token function">add</span> -A
+
+<span class="token assign-left variable">DATE</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">date</span> <span class="token string">'+%Y-%m-%d %H:%M:%S'</span><span class="token variable">)</span></span>
+<span class="token function">git</span> commit -m <span class="token string">&quot;deploy: github gh-pages <span class="token variable">$DATE</span>&quot;</span>
+
+<span class="token function">git</span> push -f https://github.com/vikbert/vuepress-boilerplate.git master:gh-pages
+<span class="token function">rm</span> -rf gh-pages
+<span class="token builtin class-name">cd</span> -
+<span class="token function">git</span> pull
+</code></pre></div><blockquote><p>based on the current project repository, the <code>git repo</code> should be changed <code>https://github.com/vikbert/vuepress-boilerplate.git</code>.</p></blockquote> <h2 id="license"><a href="#license" class="header-anchor">#</a> License</h2> <p>MIT © vikbert</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">11/24/2020, 5:04:40 PM</span></div></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/vuepress-boilerplate/layout.html">
+        Layout
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/vuepress-boilerplate/assets/js/app.5e1ebc95.js" defer></script><script src="/vuepress-boilerplate/assets/js/2.a59b9c3e.js" defer></script><script src="/vuepress-boilerplate/assets/js/7.0592dfec.js" defer></script>
+  </body>
+</html>
