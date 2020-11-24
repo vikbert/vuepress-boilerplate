@@ -35,8 +35,7 @@
 
 > the project file structure
 ```bash
-.
-├── .gitignore
+docs/
 ├── .vuepress
 │   ├── config.js
 │   └── styles
