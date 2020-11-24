@@ -11,7 +11,7 @@ module.exports = {
     ],
   ],
   plugins: [],
-  base: '/pixss/',
+  base: '/vuepress-boilerplate/',
   themeConfig: {
     lastUpdated: 'Last Updated',
     docsDir: 'docs',
