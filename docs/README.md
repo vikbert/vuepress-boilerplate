@@ -8,7 +8,7 @@
 
   <!-- description of project -->
   <p>
-    This boilerplate provides the quick start with vuepress generator. Including customization and deployment on `github.io`.
+    This boilerplate provides the template for a quick start with vuepress. It includes the themming customization and a simple script for the deployment on GitHub Pages.
   </p>
 
   <!-- github icons for PR and License -->

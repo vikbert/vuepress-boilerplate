@@ -8,7 +8,7 @@
 
   <!-- description of project -->
   <p>
-    This boilerplate provides the quick start with vuepress generator. Including customization and deployment on GitHub.
+    This boilerplate provides the template for a quick start with vuepress. It includes the themming customization and a simple script for the deployment on GitHub Pages.
   </p>
 
   <!-- github icons for PR and License -->
@@ -24,10 +24,13 @@
 
 ---
 
-## Install
+## Download & Install
 
 ```bash
  git clone https://github.com/vikbert/vuepress-boilerplate.git my-vuepress
+ cd my-vuepress
+ npm install
+ npm run docs:dev  // Goto http://localhost:8080/vuepress-boilerplate/
 ```
 
 > the project file structure
@@ -44,10 +47,10 @@
     ├── about.md
     └── latest.md
 ```
-- `docs`: The root of folder `docs` is the location of `markdown`
-- `other`: the location of the special page content, which you will show as navigtion links.
-- `.vuepress` is the location of vuepress configuration. It is also the default output location for `vuepress build`. After each run "vuepress build", a fold named `dist` will be generated within `./vuepress/dist`
-- `dist` folder is the output location of command `vuepress`, where all generated htmls files go. It can be configured by tag `dest` in `config.js`
+- `docs`: the root location of `markdown` documents
+- `other`: the location of the special page contents, which you will show as nav links.
+- `.vuepress` is the location for the config files in vuepress. It is also the default output location for `vuepress build`. After each run "vuepress build", it creates a new folder named `dist` within `./vuepress/dist`
+- `dist` folder is the output location of command `vuepress run docs`, where all generated HTML files go. It can be configured by the tag `dest` in `config.js`
 
 > generated html static files
 ```bash
@@ -70,12 +73,17 @@
 │       ├── about.html
 │       └── latest.html
 ```
-> html file will be generated according to the file structure of `markdown` files in the root of `docs`
+> HTML file will be generated according to the file structure of `markdown` files in the root `docs`
 
 ## Deployment
-As example, we deploy this static web site under `github.io/vikbert/vuepress-boilerplate`.
+As an example, we deploy the static pages under `github.io/vikbert/vuepress-boilerplate`.
 
-Run the deploy script to push the static pages to github `gh-pages`
+First of all, we need set the correct `base` in `config.js`
+```bash
+ base: '/vuepress-boilerplate/', 
+```
+
+then, run the deploy script to trigger the build and push the generated static pages to GitHub `gh-pages`
 ```bash
  bash deploy.sh 
 ```
