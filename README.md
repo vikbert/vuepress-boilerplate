@@ -95,6 +95,9 @@ then, run the deploy script to trigger the build and push the generated static p
 #!/usr/bin/env sh
 set -e
 
+# change the GIT_REPO with the correct URL
+readonly GIT_REPO=https://github.com/vikbert/vuepress-boilerplate.git
+
 npm run docs:build
 mkdir -p gh-pages/
 
@@ -107,12 +110,14 @@ git add -A
 DATE=$(date '+%Y-%m-%d %H:%M:%S')
 git commit -m "deploy: github gh-pages $DATE"
 
-git push -f https://github.com/vikbert/vuepress-boilerplate.git master:gh-pages
-rm -rf gh-pages
+git push -f $GIT_REPO master:gh-pages
+
 cd -
 git pull
+rm -rf gh-pages
+
 ```
-> based on the current project repository, the `git repo` should be changed `https://github.com/vikbert/vuepress-boilerplate.git`.
+> based on the current project repository, the `GIT_REPO` should be changed `https://github.com/vikbert/vuepress-boilerplate.git`.
 
 
 
